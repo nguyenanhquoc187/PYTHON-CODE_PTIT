@@ -1,0 +1,7 @@
+s1 = input()
+s2 = input()
+p = int(input())
+s1 = list(s1)
+s1.insert(p-1,s2)
+s2 = ''.join(s1)
+print(s2)
