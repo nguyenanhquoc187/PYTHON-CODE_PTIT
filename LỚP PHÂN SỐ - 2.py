@@ -17,5 +17,4 @@ class PhanSo:
 a = [int(i) for i in input().split()]
 p1 = PhanSo(a[0], a[1])
 p2 = PhanSo(a[2], a[3])
-
 print(p1.TongPhanSo(p2).ToiGian())

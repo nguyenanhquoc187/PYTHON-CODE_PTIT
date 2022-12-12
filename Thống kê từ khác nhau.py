@@ -1,11 +1,9 @@
+import re
+
+
 def xoadau(s: str):
-    s = list(s)
-    a = []
-    for i in s:
-        if i.isalnum() or i == ' ':
-            a.append(i)
-        else: a.append(' ')
-    s = ''.join(a)
+    kitu = re.compile('\W')
+    s = re.sub(kitu, ' ', s.lower()) 
     return s
 n = int(input())
 ds = []
@@ -23,4 +21,3 @@ for i in d:
 ds.sort( key = lambda k: (-k[1], k[0]) )
 for i in ds:
     print(*i, sep = ' ')
-    

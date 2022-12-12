@@ -8,7 +8,7 @@ def Xuly (s):
             res.append(tmp)
             tmp = ""
         else:
-            tmp += i
+            tmp += i 
             
     for i in res:
         i = " ".join(i.split())

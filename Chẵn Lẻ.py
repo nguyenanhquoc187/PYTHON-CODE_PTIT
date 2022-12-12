@@ -9,7 +9,7 @@ def check1(a: list):
     for i in a: sum+=i
     return (sum%10 == 0)
 def check2(a: list):
-    for i in range(1,len(a) -1):
+    for i in range(len(a) -1):
         if abs(a[i+1] - a[i] ) != 2: return False
     return True
 for t in range( int(input()) ): solve()
