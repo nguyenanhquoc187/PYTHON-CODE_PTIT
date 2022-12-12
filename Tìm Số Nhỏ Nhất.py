@@ -7,4 +7,3 @@ def solve():
     a = [ int(i) for i in s2.split() ]
     print(min(a))
 for t in range( int(input())): solve()
-a
