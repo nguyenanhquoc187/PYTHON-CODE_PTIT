@@ -20,7 +20,7 @@ def nghe():
         print("Loại bỏ tiếng ồn ")
         recognizer.adjust_for_ambient_noise(mic, duration=1)
         print('Tôi đang nghe bạn đây...')
-        recorded_audio = recognizer.listen(mic, timeout=4)
+        recorded_audio = recognizer.listen(mic, timeout=4 ) 
         print("Done recording")
 
         try:
